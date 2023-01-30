@@ -34,8 +34,11 @@ while activeGame:
         except ValueError:
             print("Invalid entry. Please try again.")
             continue
+
+        if((usernum <= 0) or (usernum > 100)):
+            print("Your number is not between 1 and 100. Please try again.")
         else:
-            break
+            userInputCheckActive = False;
 
     #User Higher or Lower check
     while(compareCheckActive):
